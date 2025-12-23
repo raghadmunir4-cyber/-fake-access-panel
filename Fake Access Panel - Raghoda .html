@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Access Panel - Raghoda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #050505;
+            color: #00ff7f;
+            font-family: "Courier New", monospace;
+        }
+        .scan {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #00ff7f, transparent);
+            animation: scan 2s linear infinite;
+        }
+        @keyframes scan {
+            0% { top: 0; }
+            50% { top: 100%; }
+            100% { top: 0; }
+        }
+        .container {
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 30px;
+            border: 1px solid #00ff7f33;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00ff7f33;
+            background: #050505cc;
+        }
+        .title {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            color: #7fffbb;
+            margin-bottom: 30px;
+        }
+        .line {
+            border-bottom: 1px solid #00ff7f33;
+            margin: 15px 0;
+        }
+        .log {
+            font-size: 13px;
+            line-height: 1.7;
+            direction: ltr;
+        }
+        .ok { color: #00ff7f; }
+        .warn { color: #ffd700; }
+        .err { color: #ff5555; }
+        .tag {
+            display: inline-block;
+            border: 1px solid #00ff7f55;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: #7fffbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="scan"></div>
+    <div class="container">
+        <div class="title">
+            [ Fake Access Panel ]
+        </div>
+        <div class="subtitle">
+            صفحة وهمية للتجربة التعليمية – تصميم: رغودة
+        </div>
+
+        <div class="line"></div>
+
+        <div class="log">
+            <span class="ok">[+] Initializing virtual session...</span><br>
+            <span class="ok">[+] Loading fake security modules...</span><br>
+            <span class="warn">[*] Notice: This page is for training only.</span><br>
+            <span class="ok">[+] No real systems are affected.</span><br>
+            <span class="err">[-] Warning: Any unauthorized real hacking is illegal.</span><br>
+            <br>
+            <span class="ok">[+] Status: <strong>SANDBOX / DEMO MODE</strong></span><br>
+            <span class="ok">[+] Owner: RAGHODA</span><br>
+            <span class="ok">[+] Mode: Fake “Hacker Style” landing page</span><br>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="footer">
+            هذه الصفحة مثال على <span class="tag">رابط وهمي بتصميم هاكر</span><br>
+            للاستخدام في الواجبات والدروس فقط، بدون أي ضرر أو اختراق حقيقي.
+        </div>
+    </div>
+</body>
+</html>
